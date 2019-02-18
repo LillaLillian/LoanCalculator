@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/action_bar_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:entries="@array/spinner_array"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_spinner">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvAmountLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.6"
+                android:text="@string/txt_amountLabel"
+                app:layout_constraintEnd_toStartOf="@+id/sbAmount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/action_bar_spinner"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tvRateLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.6"
+                android:text="@string/txt_rateLabel"
+                app:layout_constraintEnd_toStartOf="@+id/sbRate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAmountLabel"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tvYearsLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.6"
+                android:text="@string/txt_yearsLabel"
+                app:layout_constraintEnd_toStartOf="@+id/sbYears"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRateLabel"
+                android:textColor="@color/colorBlack" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SeekBar
+                android:id="@+id/sbAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:max="@integer/maxAmount"
+                app:layout_constraintEnd_toStartOf="@+id/tvAmount"
+                app:layout_constraintStart_toStartOf="@+id/sbRate"
+                app:layout_constraintTop_toBottomOf="@+id/action_bar_spinner" />
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.2"
+                android:gravity="end"
+                android:text="@string/txt_amountHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/action_bar_spinner"
+                android:textColor="@color/colorBlack" />
+
+            <SeekBar
+                android:id="@+id/sbRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:max="@integer/maxRate"
+                app:layout_constraintEnd_toStartOf="@+id/tvRate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tvRateLabel"
+                app:layout_constraintTop_toBottomOf="@+id/sbAmount" />
+
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.2"
+                android:gravity="end"
+                android:text="@string/txt_rateHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sbRate"
+                app:layout_constraintTop_toBottomOf="@+id/tvAmount"
+                android:textColor="@color/colorBlack" />
+
+            <SeekBar
+                android:id="@+id/sbYears"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:max="@integer/maxYears"
+                app:layout_constraintEnd_toStartOf="@+id/tvYears"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/sbRate"
+                app:layout_constraintTop_toBottomOf="@+id/sbRate" />
+
+            <TextView
+                android:id="@+id/tvYears"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.2"
+                android:gravity="end"
+                android:text="@string/txt_yearsHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sbYears"
+                app:layout_constraintTop_toBottomOf="@+id/tvRate"
+                android:textColor="@color/colorBlack" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="88dp">
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="btnClick"
+        android:text="@string/txt_btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnReset"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:onClick="btnClick"
+        android:text="@string/txt_btnReset"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toStartOf="@+id/btnCalculate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/lvResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate">
+
+        <TextView
+            android:id="@+id/tvCaptionYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="@string/txt_captionYear"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvCaptionInstallment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_captionInstallment"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvCaptionInterests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_captionInterests"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvCaptionPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_captionPrincipal"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvCaptionRemaining"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/txt_captionRemaining"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

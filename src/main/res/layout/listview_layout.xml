@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayoutListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+
+        <TextView
+            android:id="@+id/tvListYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/tvListTotalPayment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvListInterests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvListPrincipal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/tvListRemaining"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

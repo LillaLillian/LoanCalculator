@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maxAmount">1000</integer>
+    <integer name="maxRate">99</integer>
+    <integer name="maxYears">30</integer>
+</resources>

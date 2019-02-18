@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_export"
+        android:icon="@drawable/ic_export"
+        android:title="@string/menu_Export"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_reset"
+        android:icon="@drawable/ic_reset"
+        android:title="@string/menu_Reset"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/menu_Help"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="@string/menu_Exit"
+        app:showAsAction="never"/>
+</menu>

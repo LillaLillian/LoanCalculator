@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Loan calculator</string>
+    <string name="menu_Export">Export</string>
+    <string name="menu_Reset">Reset</string>
+    <string name="menu_Help">Help</string>
+    <string name="txt_Help">
+        1. Select type of loan \n
+        2. Select the desired amount \n
+        3. Select the desired rate \n
+        4. Select the desired number of terms (1 term equals 1 year) \n
+        5. Press \'Calculate\' \n
+        6. The result is displayed below \n
+        7. Press \'Export\' to download the result
+    </string>
+    <string name="txt_Confirm" translatable="false">OK</string>
+    <string name="menu_Exit">Exit</string>
+    <string name="txt_amountLabel">Amount (USD)</string>
+    <string name="txt_amountHint">0.0</string>
+    <string name="txt_rateLabel">Rate</string>
+    <string name="txt_rateHint">0.0</string>
+    <string name="txt_yearsLabel">Years/Terms</string>
+    <string name="txt_yearsHint" translatable="false">0</string>
+    <string name="txt_btnReset">Reset</string>
+    <string name="txt_btnCalculate">Calculate</string>
+    <string name="currency">USD</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="mill" translatable="false">mill</string>
+    <string name="txt_captionYear">Year</string>
+    <string name="txt_captionInstallment">Installment</string>
+    <string name="txt_captionInterests">Interests</string>
+    <string name="txt_captionPrincipal">Principal</string>
+    <string name="txt_captionRemaining">Remaining</string>
+    <string name="errorCalculate">Please select all values</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="exported">Sucessfully exported to json</string>
+    <string name="errorExport">Calculate loan first</string>
+    <string name="calculateSeries">Calculate serial loan</string>
+</resources>

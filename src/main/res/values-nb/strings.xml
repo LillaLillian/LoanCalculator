@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lånekalkulator</string>
+    <string name="txt_amountLabel">Beløp (NOK)</string>
+    <string name="txt_rateLabel">Rente</string>
+    <string name="txt_yearsLabel">År/Terminer</string>
+    <string name="txt_btnReset">Tilbakestill</string>
+    <string name="txt_btnCalculate">Kalkuler</string>
+    <string name="menu_Reset">Tilbakestill</string>
+    <string name="menu_Help">Hjelp</string>
+    <string name="txt_Help">
+        1. Velg lånetype \n
+        2. Velg ønsket lånebeløp \n
+        3. Velg ønsket rente \n
+        4. Velg ønsket antall terminer (1 termin = 1 år) \n
+        5. Trykk \'Kalkuler\' \n
+        6. Resultatet vises nedenfor \n
+        7. Trykk \'Eksporter\' for å laste ned resultatet
+    </string>
+    <string name="menu_Exit">Avslutt</string>
+    <string name="menu_Export">Eksporter</string>
+    <string name="currency">NOK</string>
+    <string name="txt_amountHint" translatable="false">0,0</string>
+    <string name="txt_rateHint">0,0</string>
+    <string name="txt_captionYear">År</string>
+    <string name="txt_captionInstallment">Terminbeløp</string>
+    <string name="txt_captionInterests">Renter</string>
+    <string name="txt_captionPrincipal">Avdrag</string>
+    <string name="txt_captionRemaining">Utestående</string>
+    <string name="errorCalculate">Vennligst velg alle verdiene</string>
+    <string name="permission_denied">"Ingen tilgang "</string>
+    <string name="exported">Eksportering til json var vellykket</string>
+    <string name="errorExport">Kalkuler lån først</string>
+    <string name="calculateSeries">Kalkuler serielån</string>
+</resources>
